@@ -10,7 +10,7 @@ router.post('/task', (req, res) => controllers.createTaskController(req, res));
 
 router.put("/task", (req,res) => controllers.updateTaskController(req, res));
 
-router.delete('/task', (req, res) => controllers.deleteTaskController(req, res));
+router.delete('/task/:id', (req, res) => controllers.deleteTaskController(req, res));
 
 // router.get('/', (req, res) => {
 //     res.send('Hello world. Test2');
